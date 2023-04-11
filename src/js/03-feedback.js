@@ -24,6 +24,7 @@ function onSubmit(event) {
         return console.log('All fields must be filled');
     }
     console.log(formValues);
+    localStorage.removeItem(keyForm);
     event.currentTarget.reset();
 }
 
